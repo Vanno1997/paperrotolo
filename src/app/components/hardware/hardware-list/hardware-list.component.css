@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .header, .footer {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+  }
+  
+  .column {
+    float: left;
+    padding: 15px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .acc{
+      float:right;
+  }
+  
+  .menu {
+    width: 25%;
+  }
+  
+  .content {
+    width: 75%;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+  }
+  
+  .doge {
+    position: absolute;
+    bottom: 0px;
+    left:  0px;
+  }
+  
+  .intero{
+      height: 100%;
+      background-color: #5ab5e6;
+  }
+  .themed-grid-col {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: rgba(86, 61, 124, .15);
+      border: 1px solid rgba(86, 61, 124, .2);
+  }
+  
+  .data-cels{
+    max-width: 33.333334%;
+    text-align: left;
+  }
+  
+  .data-header{
+    max-width:100%;
+    text-align:left;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+  }
+  
+  .tipo-dato{
+    font-size: 2em;
+  }
+  
+  .contenuto-dato{
+    font-size: 1em;
+  }
+  
+  .link-row{
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+  .t-action{
+      min-width: 160px;
+  }
+  
+  .btMenu{
+    text-align: center;;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  
+  .noMargin{
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  
+  .tdCentered{
+      vertical-align: middle;
+  }
+  .optionTD{
+      padding: 1px;
+  }
+  

@@ -1,0 +1,29 @@
+
+<body class="body">
+<h1 class="title" >Lista Thing</h1>
+
+			<div id="container">
+				<table class="table table-striped">
+				  <thead>
+				      <tr>
+				        <th>ID</th>
+				        <th>Nome</th>
+				        <th>ID Proprietario </th>
+				        <th>ID Label</th>
+				      </tr>
+				  </thead>
+
+				  <tbody>
+							<tr *ngFor="let thingDTO of thingList">
+                <td>{{thingDTO.idThing}} </td>
+                <td>{{thingDTO.name}} </td>
+                <td>{{thingDTO.idUser}}</td>
+                <td>{{thingDTO.label.idLabel}}</td>
+								<!--
+								<td><button class="btn btn-primary" (click)="deleteThing(thingDTO)">Elimina</button></td>
+								<td><button class="btn btn-primary" (click)="setThing(thingDTO)"  >Aggiorna</button>  </td>  -->
+              </tr>
+          </tbody>
+			  </table>
+      </div>
+</body>

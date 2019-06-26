@@ -1,0 +1,62 @@
+<head>
+<link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+</head>
+  <div class="clearfix" id="corpo">
+  <div class="grid-container" id="menu-destra" style="border-right: 1px solid lightgray">
+    <div class="row no-pad" style="height:70px">
+      <div class="col-sm-4">
+      <img src="assets/img/photo3.jpg" class="rounded-circle img-fluid" alt="Responsive image" style="padding:1px ;margin:5px">
+      </div>
+      <div class="col-sm-8" style ="position:relative">
+        <div class="dropdown" style="position:absolute ;right:0;bottom:5%;">
+          <button class="dropbtn" style=" font-size:12px;  text-align: right;    padding: 0px; padding-right:3px  ">Davide Ferretti <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#">LOGOUT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row no-pad">
+      <div class="col-sm-12 right-choice choice-header bg-dark">
+        <a [routerLink]="['dashboard']" style="color:white">
+          <p class="prodotti">Prodotti </p>
+        </a>
+        <a [routerLink]="['insertThing']" style="color:white">
+          <i class="fas fa-plus piu-prodotti"></i>
+        </a>
+      </div>
+
+      <div *ngFor="let thingDTO of thingList" class="col-sm-12 right-choice brd">
+        <a class="menu-thing" [routerLink]="['dashboard/info-thing', thingDTO.id]"> {{thingDTO.name}} </a>
+      </div>
+    </div>
+      <!--  <a [routerLink]="['insertThing']" class="btn btn-lg btn-primary btn-block" > Insert Thing </a>
+
+        <a [routerLink]="['insertKeyword']"  class="btn btn-lg btn-primary btn-block" > Insert Keyword </a>
+
+        <a [routerLink]="['insertLabel']"  class="btn btn-lg btn-primary btn-block" > Insert Label </a>
+
+        <a [routerLink]="['insertHardware']"  class="btn btn-lg btn-primary btn-block" > Insert Hardware </a>
+
+        <a [routerLink]="['insertLinkTK']"   class="btn btn-lg btn-primary btn-block" > Insert LinkTK </a>
+
+        <a [routerLink]="['insertActionEvent']"   class="btn btn-lg btn-primary btn-block" > Insert Action Event </a>
+
+        <a [routerLink]="['listThing']"  class="btn btn-lg btn-primary btn-block" >List Thing </a>
+
+        <a [routerLink]="['listKeyword']"  class="btn btn-lg btn-primary btn-block" > List Keyword </a>
+
+        <a [routerLink]="['listLabel']"  class="btn btn-lg btn-primary btn-block" >List Label </a>
+
+        <a [routerLink]="['listHardware']"  class="btn btn-lg btn-primary btn-block" >List Hardware </a>
+
+        <a [routerLink]="['listLinkTK']"   class="btn btn-lg btn-primary btn-block" > List LinkTK </a>
+
+        <a [routerLink]="['listActionEvent']"   class="btn btn-lg btn-primary btn-block" > List ActionEvent </a> -->
+
+
+  </div>
+</div>

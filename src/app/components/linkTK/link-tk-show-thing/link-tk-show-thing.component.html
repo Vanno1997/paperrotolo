@@ -1,0 +1,24 @@
+
+<body class="body">
+<h1 class="title" >Lista keyword collegate</h1>
+
+			<div id="container">
+				<table class="table table-striped">
+				  <thead>
+				      <tr>
+				        <th>ID</th>
+                <th>Nome Thing</th>
+                <th>Nome Keyword</th>
+				      </tr>
+				  </thead>
+
+				  <tbody>
+							<tr *ngFor="let linkTKDTO of arrayLink">
+									<td>{{linkTKDTO.idLinkTK}} </td>
+									<td>{{linkTKDTO.thing.name}} </td>
+									<td>{{linkTKDTO.keyword.name}}</td>
+							</tr>
+          </tbody>
+			  </table>
+      </div>
+</body>

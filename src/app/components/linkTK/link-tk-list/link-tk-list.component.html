@@ -1,0 +1,26 @@
+
+<body class="body">
+<h1 class="title" >Lista Collegamenti</h1>
+
+			<div id="container">
+				<table class="table table-striped">
+				  <thead>
+				      <tr>
+				        <th>ID</th>
+				        <th>Thing</th>
+				        <th>Keyword</th>
+				      </tr>
+				  </thead>
+
+				  <tbody>
+							<tr *ngFor="let linkTKDTO of linkTKList">
+                <td>{{linkTKDTO.idLinkTK}} </td>
+                <td>{{linkTKDTO.thing.name}} </td>
+                <td>{{linkTKDTO.keyword.name}}</td>
+								<td><button class="btn btn-primary" (click)="deleteLinkTK(linkTKDTO)">Elimina</button></td>
+								<td><button class="btn btn-primary"(click)= "chooseLinkTK(linkTKDTO.idLink)" (click)="setDTO(linkTKDTO)" >Aggiorna</button> </td>
+              </tr>
+          </tbody>
+			  </table>
+      </div>
+</body>

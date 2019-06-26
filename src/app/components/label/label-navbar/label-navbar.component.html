@@ -1,0 +1,29 @@
+
+<body class="body">
+    <h1 class="title" >Lista Label</h1>
+    
+          <div id="container">
+            <table class="table table-striped">
+              <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>ID Proprietario </th>
+                  </tr>
+              </thead>
+    
+              <tbody>
+                  <tr *ngFor="let labelDTO of labelList">
+                    <td>{{labelDTO.idLabel}} </td>
+                    <td>{{labelDTO.name}} </td>
+                    <td>{{labelDTO.idUser}}</td>
+                    <td><button class="btn btn-primary" (click)="deleteLabel(labelDTO)">Elimina</button></td>
+                    <td><button class="btn btn-primary" (click)="findAction(labelDTO)">Azioni</button>  </td>
+                    <td><button class="btn btn-primary" (click)="findEvent(labelDTO)">Eventi</button>  </td>
+                    <td><button class="btn btn-primary" (click)="setLabel(labelDTO)">Aggiorna</button>  </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+    </body>
+    

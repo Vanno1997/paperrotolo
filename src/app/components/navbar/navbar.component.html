@@ -1,0 +1,44 @@
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark no-padding">
+    <div class="row" style="width:100%">
+      <div class="col-sm-4" style="padding:10px ; padding-bottom:0px">
+        <div class="h-100">
+     <div class="d-flex justify-content-center h-100">
+       <div class="searchbar">
+         <input [(ngModel)]="messaggio2" class="search_input" type="text" name="" placeholder="Immetti Azione" aria-label="Search">
+         <button (click) = "findAzione()" class="search_icon"><i class="fas fa-search"></i></button>
+       </div>
+     </div>
+   </div>
+      </div>
+      <div class="col-sm-4">
+        <a class="navbar-brand full-width" [routerLink]="['dashboard']">
+          <img src="assets\img\asd.svg" height="60" style="padding-top:5px">
+        </a>
+      </div>
+      <div class="col-sm-4" style= "color:white;font-size:1.5rem;text-align:right;padding:20px;padding-bottom:10px">
+        <i class="fas fa-radiation-alt icon-padding" style ="color:white"></i>
+        <i class="far fa-comments icon-padding"></i>
+        <i class="far fa-bell icon-padding"></i>
+      </div>
+      <!-- <div class="user-info">
+          <img src="assets/img/photo3.jpg" class="img-fluid profile-picture" alt="Responsive image">
+
+          <span class="user-name">Jhon
+            <strong>Smith</strong>
+          </span>
+          <span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+        </div> -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        </div>
+        </div>
+  </nav>
+<!-- <input  [(ngModel)]="messaggio"  class="form-control mr-sm-2" type="text" placeholder="Immetti Label" aria-label="Search" />
+  <button class="btn btn-outline-success my-2 my-sm-0" (click) = "findLabel()" >Ricerca Label</button> -->
+<!--<input  [(ngModel)]="messaggio2"  class="form-control mr-sm-2" type="text" placeholder="Immetti Azione" aria-label="Search" />
+  <button class="btn btn-outline-success my-2 my-sm-0" (click) = "findAzione()" >Ricerca Thing</button> -->

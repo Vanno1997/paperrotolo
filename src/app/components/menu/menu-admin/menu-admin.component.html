@@ -1,0 +1,22 @@
+
+<head>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+</head>
+    <a class="navbar-brand full-width" [routerLink]="['dashboard']">
+      <img src="assets/img/Black.png" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+    </a>
+
+    <div class="py-2 sticky-top flex-grow-1" >
+      <div class="nav flex-sm-column">
+          <a  class="nav-link" [routerLink]="['insertUser']" routerLinkActive="active">
+          Insert User </a>
+          <a  class="nav-link" [routerLink]="['listUser']" >
+          Show User </a>
+          <a href="./login" class="nav-link" >Logout </a>
+        </div>
+      </div>

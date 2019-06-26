@@ -1,0 +1,31 @@
+
+<body class="body">
+  <h1 class="title" >Lista Thing</h1>
+
+        <div id="container">
+          <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nome</th>
+                  <th>ID Proprietario </th>
+                  <th>ID Label</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr *ngFor="let thingDTO of listThing">
+                  <td>{{thingDTO.idThing}} </td>
+                  <td>{{thingDTO.name}} </td>
+                  <td>{{thingDTO.idUser}}</td>
+                  <td>{{thingDTO.label.idLabel}}</td>
+                  <td><button class="btn btn-secondary" (click)="deleteThing(thingDTO)"><i class="fas fa-trash-alt" style="color:white"></i></button></td>
+                  <td><button class="btn btn-secondary" (click)="setThing(thingDTO)"  ><i class="fas fa-pen-square" style="color:white"></i></button>  </td> <!-- (click)="setDTO(thingDTO)" -->
+                </tr>
+            </tbody>
+          </table>
+        </div>
+  </body>

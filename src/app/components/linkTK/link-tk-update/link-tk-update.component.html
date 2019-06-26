@@ -1,0 +1,20 @@
+
+<body class="body">
+<h1 class="title" >Lista Collegamenti</h1>
+<div>
+  <label>Keyword</label>
+  <select [(ngModel)]="keywordDTO.idKeyword" class="form control" name="keywordDTO" id="formLabel" >
+        <option *ngFor="let keywordDTO of keywordList" [value]="keywordDTO.idKeyword">{{keywordDTO.name}}</option>
+  </select>
+</div>
+<div>
+  <label>Thing</label>
+  <select [(ngModel)]="thingDTO.idThing" class="form control" name="thingDTO" id="formLabel" >
+        <option *ngFor="let thingDTO of thingList" [value]="thingDTO.idThing">{{thingDTO.name}}</option>
+  </select>
+</div>
+
+<p class="tn btn-primary">
+  <button class="tn btn-primary" type="submit" (click)="aggiornaLinkTK()">Aggiorna</button>
+</p>
+</body>

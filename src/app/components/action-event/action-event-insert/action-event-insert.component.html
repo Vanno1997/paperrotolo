@@ -1,0 +1,35 @@
+<form>
+  <p class="dropbtn">
+        <label> Name </label>
+        <input type="text" class="dropbtn " name="name" [(ngModel)]="actionEventDTO.name" placeholder="name">
+  </p>
+
+  <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+    <label class="col-form-label"> Description </label>
+    <textarea class="form-control"  name="description" placeholder="Description" [(ngModel)]="actionEventDTO.description">
+</textarea>
+</p>
+  
+  <div>
+        <label>Label</label>
+        <select [(ngModel)]="labelDTO.idLabel" class="form control" name="labelDTO" id="formLabel">
+              <option *ngFor="let labelDTO of labelList" [value]="labelDTO.idLabel">{{labelDTO.name}}</option>
+        </select>
+  </div>
+
+  <p class="form-row form-group user-role">
+    <label for="reg_sr_lastname" style="padding-right:10px">Tipo <span class="required">*</span></label>
+      <label class="radio" style="padding-right:10px">
+          <input type="radio" name="type" value="0" checked="checked" [(ngModel)]="actionEventDTO.type">
+          Azione</label>
+
+      <label class="radio">
+          <input type="radio" name="type" value="1" [(ngModel)]="actionEventDTO.type">
+          Evento</label>
+  </p>
+
+  <p class="tn btn-primary">
+        <button class="tn btn-primary" type="submit" (click)="insertActionEvent()">Aggiungi</button>
+  </p>
+</form>
+

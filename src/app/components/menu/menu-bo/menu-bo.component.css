@@ -1,0 +1,98 @@
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: white}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+.right-choice {
+  height:50px;
+}
+
+.choice-header {
+
+  color:white;
+}
+
+.prodotti {
+ position: absolute;
+ top:50%;
+ padding-left:10px;
+}
+
+.piu-prodotti {
+ position: absolute;
+ top:61%;
+ right:10%
+}
+
+.menu-thing{
+  position: absolute;
+  top:45%;
+  padding-left:10px;
+  color:inherit;
+}
+.menu-thing:hover{
+  color:inherit;
+}
+
+.brd{
+  border-bottom: 1px solid;
+  border-bottom-color: lightgray;
+  color:black;
+}
+
+.brd:hover {
+  color:white;
+  background-color: #343a40!important;
+}

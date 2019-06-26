@@ -1,0 +1,26 @@
+<form>
+  <p class="dropbtn" >
+        <label> Descrizione </label>
+        <input type="text" class="dropbtn" name="code" [(ngModel)]="hardwareDTO.description"placeholder="Descrizione">
+  </p>
+  <p class="dropbtn" >
+    <label> Nome </label>
+    <input type="text" class="dropbtn" name="nome" [(ngModel)]="hardwareDTO.name"placeholder="Nome">
+  </p>
+
+  <label> Master </label>
+  <select [(ngModel)]="hardwareDTO.master" name="master">
+    <option [value]="false"> false</option>
+    <option [value]="true">  True</option>
+  </select>
+<div>
+  <label> Thing</label>
+  <select [(ngModel)]="thingDTO.idThing" class="form control" name="thingDTO" id="formThing" >
+        <option *ngFor="let thingDTO of thingList" [value]="thingDTO.idThing">{{thingDTO.name}}</option>
+  </select>
+</div>
+
+<p class="tn btn-primary">
+  <button class="tn btn-primary" type="submit" (click)="insertHardware()">Aggiungi</button>
+</p>
+</form>

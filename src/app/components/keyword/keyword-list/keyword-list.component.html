@@ -1,0 +1,26 @@
+
+<body class="body">
+<h1 class="title" >Lista Keyword</h1>
+
+			<div id="container">
+				<table class="table table-striped">
+				  <thead>
+				      <tr>
+				        <th>ID</th>
+				        <th>Nome</th>
+				      </tr>
+				  </thead>
+
+				  <tbody>
+							<tr *ngFor="let keywordDTO of keywordList">
+                <td>{{keywordDTO.idKeyword}} </td>
+                <td>{{keywordDTO.name}} </td>
+								<td><button class="btn btn-primary" (click)="deleteKeyword(keywordDTO)"> Elimina </button></td>
+								<td><button class="btn btn-primary"(click)= "chooseKeyword(keywordDTO.idKeyword)" (click)="setDTO(keywordDTO)" > Aggiorna </button>  </td>
+								<!--<td><button class="btn btn-primary" (click)="showTK(keywordDTO)"> Visualizza Thing associate</button></td>-->
+								<td><button class="btn btn-primary" (click)="showThingAssociate(keywordDTO)"> Visualizza Thing associate</button></td>
+							</tr>
+          </tbody>
+			  </table>
+      </div>
+</body>

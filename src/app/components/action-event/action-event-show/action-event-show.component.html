@@ -1,0 +1,27 @@
+<body class="body">
+  <h1 class="title" >Lista Action Event</h1>
+  
+        <div id="container">
+          <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nome</th>
+                  <th>Descrizione</th>
+                  <th>Tipo</th>
+                  <th>Label</th>
+                </tr>
+            </thead>
+  
+            <tbody>
+                <tr *ngFor="let actionEventDTO of actionEventList">
+                  <td>{{actionEventDTO.idActionEvent}} </td>
+                  <td>{{actionEventDTO.name}} </td>
+                  <td>{{actionEventDTO.description}}</td>
+                  <td>{{actionEventDTO.type}}</td>
+                  <td>{{actionEventDTO.label.name}}</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+  </body>

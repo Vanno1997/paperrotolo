@@ -1,0 +1,60 @@
+
+
+
+
+
+<div class="w3-container">
+     <br>
+     <br>
+
+
+      <div class="card">
+            <div  class="giusy">
+                  <h2 style="padding-top:10px">Inserisci Dispositivo</h2>
+            </div>
+
+            <form class="container">
+                  <p>
+                        <input class="inser" type="text" name="name" [(ngModel)]="thingDTO.name" placeholder="Name">
+                  </p>
+                  <p>
+                        <input class="inser" type="text" name="description" [(ngModel)]="thingDTO.description"
+                              placeholder="Description">
+                  </p>
+                  <p>
+                        <input class="inser" type="text" name="XML" [(ngModel)]="thingDTO.xml" placeholder="XML">
+                  </p>
+                  <p>
+                        <input class="inser" type="text" name="protocol" [(ngModel)]="thingDTO.protocol"
+                              placeholder="Protocol">
+                  </p>
+
+                  <p>
+                        <textarea class="inser" type="text" name="code" placeholder="Code"
+                              [(ngModel)]="thingDTO.code">
+                  </textarea>
+                  </p>
+
+
+
+                  <p>
+                        <input class="inser" type="file" class="form-control" name="image"
+                              [(ngModel)]="thingDTO.image" placeholder="Scegli Immagine">
+                  </p>
+                  <p>
+
+                        <select [(ngModel)]="labelDTO.idLabel" class="inser" name="labelDTO" id="formLabel">
+                              <label>Choose</label>
+                              <option *ngFor="let labelDTO of labelList" [value]="labelDTO.idLabel">
+                                    {{labelDTO.name}}</option>
+                        </select>
+                  </p>
+
+                  <p>
+                              <button class="bottone" type="submit" (click)="insertThing()">Aggiungi</button>
+                        </p>
+
+
+            </form>
+      </div>
+</div>

@@ -1,0 +1,66 @@
+
+
+  .table thead{
+    background-color: #333333;
+color: rgb(244,247,249);
+font-weight: normal;
+
+  }
+
+  .titolo{
+color: rgb(244,247,249);
+font-weight: normal;
+text-align: left;
+size: 50px;
+font-family: Arial;
+
+  }
+  .btn-primary{
+    background-color: #333333;
+
+
+      }
+
+      .giusy{
+        background-color: #333333;
+        color: rgb(244,247,249);
+        height: 60px;
+        text-align: center;
+      }
+
+      .bottone{
+        background-color: white;
+        border: 1px solid #333333;
+        border-color: #333333;
+        color: #333333;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width:100%;
+      }
+
+      .bottone:hover {
+        background-color: #333333;
+        color: white;
+      }
+
+      .card{
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+      }
+
+      .container{
+        content:"";display:table;clear:both;
+      }
+
+      .inser{
+        padding:8px;
+        display:block;
+        border:none;
+        border-bottom:1px solid #333333;
+        width:100%;
+
+      }

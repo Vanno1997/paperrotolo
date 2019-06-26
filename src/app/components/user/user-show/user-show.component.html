@@ -1,0 +1,26 @@
+  <div class="col-sm-12 bg-test2 mainInfo" >
+    <h1 class="title">Lista utenti</h1>
+    <table class = "table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Password</th>
+          <th scope="col">Tipo</th>
+          <th scope="col"> Azioni</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let utenteDTO of utenteList">
+          <th scope="row">{{utenteDTO.id}}</th>
+          <td>{{utenteDTO.username}}</td>
+          <td>{{utenteDTO.password}}</td>
+          <td>{{utenteDTO.type}}</td>
+          <td>
+            <button class="btn"><i class="fa fa-trash" (click)="deleteUtente(utenteDTO)" ></i></button>
+            <button class="btn"><i class="fa fa-pen"></i></button>
+          </td>
+        </tr>
+      </tbody>
+
+    <!-- tabelle varie -->
